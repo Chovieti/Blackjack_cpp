@@ -1,14 +1,14 @@
-#include <QApplication>
+#include "GameModel.h"
 #include "GameTable.h"
-#include "CardWidget.h"
+#include <QApplication>
 
-int main(int argc, char *argv[])
-{
-    QApplication app(argc, argv);
+int main(int argc, char *argv[]) {
+  QApplication app(argc, argv);
 
-    GameTable table;
-    table.resize(800, 600);
-    table.setWindowTitle("Blackjack Game");
-    table.show();
-    return app.exec();
+  GameModel model;
+  GameTable table(&model);
+  table.resize(800, 600);
+  table.setWindowTitle("Blackjack Game");
+  table.show();
+  return app.exec();
 }

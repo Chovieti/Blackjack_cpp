@@ -1,19 +1,20 @@
 #ifndef BLACKJACK_HAND_H
 #define BLACKJACK_HAND_H
 
-#include <vector>
 #include "Card.h"
+#include <vector>
 
 class Hand {
 public:
-    Hand();
-    virtual ~Hand();
-    void Add(Card *p_card);
-    void Clear();
-    int GetTotal() const;
-    const std::vector<Card*>& GetCards() const { return cards_; }
+  Hand();
+  virtual ~Hand();
+  void Add(Card *p_card);
+  void Clear();
+  int GetTotal() const;
+  const std::vector<Card *> &GetCards() const { return cards_; }
+
 protected:
-    std::vector<Card*> cards_;
+  std::vector<Card *> cards_;
 };
 
-#endif  // BLACKJACK_HAND_H
+#endif // BLACKJACK_HAND_H

@@ -5,12 +5,12 @@
 
 class Deck : public Hand {
 public:
-    Deck();
-    virtual ~Deck();
+  Deck();
+  virtual ~Deck();
 
-    void Populate();
-    void Shuffle();
-    void Deal(Hand& hand);
+  void Populate();
+  void Shuffle();
+  void Deal(Hand &hand);
 };
 
-#endif  // BLACKJACK_DECK_H
+#endif // BLACKJACK_DECK_H

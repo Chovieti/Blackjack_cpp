@@ -3,6 +3,7 @@ project(blackjack)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
@@ -11,6 +12,7 @@ add_executable(blackjack
     Card.cc
     CardWidget.cc
     GameTable.cc
+    GameModel.cc
     Hand.cc
     Deck.cc
 )
